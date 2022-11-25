@@ -11,15 +11,21 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе целое число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-int max = num1;
+if (num1==num2)
+{
+    Console.WriteLine("Вы ввели равные числа");
+}
 
-if( num1 < num2)
-{
-    max= num2;
-}
-else
-{
-    max= num1;
-}
-Console.Write("Наибольшим является: ");
-Console.WriteLine(max);
+    int max = num1;
+
+    if (num1 < num2)
+    {
+        max= num2;
+    }
+    else
+    {
+        max= num1;
+    }
+
+    Console.Write("Наибольшим является: ");
+    Console.WriteLine(max);
